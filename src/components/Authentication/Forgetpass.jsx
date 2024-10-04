@@ -21,7 +21,7 @@ const ForgotPassword = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/forgetpassword/forgot-password', { email });
+      const response = await axios.post('https://silk-route-backend.onrender.com/api/forgetpassword/forgot-password', { email });
       setMessage('Password reset link has been sent to your email.');
       setIsSuccess(true); // Set success state
     } catch (error) {

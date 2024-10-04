@@ -37,7 +37,7 @@ function ProductCards({ id, image, price, title, rating, ratingCounts, stock }) 
 
     const product = { 
       id, 
-      image: `http://localhost:5000/products/${image}`, // Ensure full URL is saved
+      image: `https://silk-route-backend.onrender.com/products/${image}`, // Ensure full URL is saved
       price, 
       title, 
       stock 

@@ -57,7 +57,7 @@ const SignupForm = () => {
           formData.append("profilePic", image);
         }
 
-        const response = await axios.post('http://localhost:5000/api/user/signup', formData);
+        const response = await axios.post('https://silk-route-backend.onrender.com/api/user/signup', formData);
         
         if (response.data.token) {
           localStorage.setItem('token', response.data.token);

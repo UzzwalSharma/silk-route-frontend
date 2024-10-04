@@ -32,7 +32,7 @@ const ResetPassword = () => {
     if (!errorMessage) { // If there are no errors, proceed to reset the password
       setIsSubmitting(true); // Set loading state
       try {
-       const response = await axios.post(`http://localhost:5000/api/reset/reset-password/${token}`, { newPassword });
+       const response = await axios.post(`https://silk-route-backend.onrender.com/api/reset/reset-password/${token}`, { newPassword });
 
 
 

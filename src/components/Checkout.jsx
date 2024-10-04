@@ -31,7 +31,7 @@ const RazorpayCheckout = ({ totalAmount = 1200 }) => {
         setLoading(true); // Set loading to true before processing payment
 
         try {
-            const response = await fetch('http://localhost:5000/api/payment/order', {
+            const response = await fetch('https://silk-route-backend.onrender.com/api/payment/order', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
