@@ -8,7 +8,7 @@ import CartPage from './components/Cart/Cartpage';
 import Cartcomponent from './components/Cart/Cartcomponent';
 import LoginForm from './components/Authentication/Loginform';
 import SignupForm from './components/Authentication/Signup';
-import ForgotPassword from './components/Authentication/forgetpass';
+import ForgotPassword from './components/Authentication/Forgetpass';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer/Footer';
 import ResetPassword from './components/Authentication/ResetPassword';
