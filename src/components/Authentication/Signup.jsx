@@ -1,10 +1,10 @@
 import React, { useState, useRef } from "react";
-import axios from 'axios';
+
 import { useNavigate } from "react-router-dom"; 
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ClipLoader } from "react-spinners";  // Import the spinner
-
+import apiClient from "../../utils/api-client";
 const SignupForm = () => {
   // Form states
   const [name, setName] = useState("");
@@ -57,7 +57,7 @@ const SignupForm = () => {
           formData.append("profilePic", image);
         }
 
-        const response = await axios.post('https://silk-route-backend.onrender.com/api/user/signup', formData);
+        const response = await apiClient.post('/user/signup', formData);
         
         if (response.data.token) {
           localStorage.setItem('token', response.data.token);
