@@ -12,7 +12,7 @@ function Home() {
         title="Experience the Future with iPhone 14 Pro" 
         subtitle="The iPhone 14 Pro redefines innovation with its stunning 6.1 Super Retina XDR display, the most advanced Pro camera system ever, and an all-day battery. Capture stunning images, enjoy blazing-fast performance, and explore the future of smartphones today." 
         image={iPhoneImage} 
-        link="/product"
+        link="/products"
         className="transition-transform duration-500 ease-in-out transform hover:scale-105" // Adding hover effect
       />
 
@@ -27,7 +27,7 @@ function Home() {
         title="Craft Your Perfect Workspace with Mac" 
         subtitle="Power up with the latest Mac system, engineered for performance, precision, and productivity. Create your ultimate setup and redefine your workflow with unmatched speed and style." 
         image={macimg} 
-        link="/product"
+        link="/products"
         className="transition-transform duration-500 ease-in-out transform hover:scale-105" // Adding hover effect
       />
 
