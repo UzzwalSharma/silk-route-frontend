@@ -1,0 +1,81 @@
+.custom-container {
+    min-height: 50vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 2rem;
+ 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  }
+
+
+  
+  .text-section {
+    margin-bottom: 1.5rem; /* Space between text and image */
+  }
+  
+  .image-section {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: 50vh; 
+    object-fit: contain; 
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6); 
+    transform: rotateY(5deg); /* Initial slight 3D rotation */
+  }
+  
+  /* Hover effect to enhance the 3D look */
+  .product-image:hover {
+    transform: scale(1.1) rotateY(0deg) translateZ(20px); /* Scale and rotate back to give depth */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8); /* Increase shadow depth */
+    margin-bottom: 18px;
+    background-color: transparent;
+  }
+  .button {
+    background-color: #3498db; /* Default color */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition:0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  .button:hover {
+    background: linear-gradient(45deg, #3498db, #2ecc71); /* Gradient effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+    transform: translateY(-3px) scale(1.05); /* Slight lift on hover */
+  }
+  
+  
+  
+  /* Responsive styling */
+  @media (max-width: 600px) {
+    .custom-container {
+      flex-direction: column-reverse; /* Stack text and image vertically on small screens */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .custom-container {
+      padding: 0 2rem; /* Increase padding on larger screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .custom-container {
+      padding: 0 4rem; /* Further increase padding on very large screens */
+    }
+  }
+  

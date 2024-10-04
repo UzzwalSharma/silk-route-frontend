@@ -1,0 +1,45 @@
+.carousel {
+  max-width: 800px; /* Maximum width for larger screens */
+  margin: auto; /* Center the carousel */
+  width: 100%; /* Full width on smaller screens */
+}
+
+.carousel .slide {
+  display: flex;
+  justify-content: center; /* Center the product card */
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Full width for product card */
+  max-width: 300px; /* Limit max width for larger screens */
+}
+
+.product-card img {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .carousel {
+    max-width: 100%; /* Allow full width on mobile */
+    padding: 0 10px; /* Add padding for mobile */
+  }
+
+  .product-card {
+    max-width: 90%; /* Adjust max width for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Reduce heading size for smaller screens */
+  }
+}

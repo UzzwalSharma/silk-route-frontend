@@ -1,0 +1,13 @@
+/* App.css */
+.navbar img {
+  height: 50px; /* Increase the height */
+  width: 50px;  /* Increase the width */
+  border-radius: 50%; /* Keeps the image circular */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation on hover */
+}
+
+.navbar img:hover {
+  transform: scale(1.1); /* Scales the image on hover */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
+}
