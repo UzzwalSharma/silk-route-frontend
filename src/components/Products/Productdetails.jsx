@@ -105,7 +105,7 @@ const ProductDetail = () => {
         });
     };
 
-    const getImagePath = (imageName) => `http://localhost:5000/products/${imageName}`;
+    const getImagePath = (imageName) => `https://silk-route-backend.onrender.com/products/${imageName}`;
 
     return (
         <div className="max-w-6xl mx-auto p-4 sm:p-8 bg-gray-200 shadow-md mt-10 rounded">

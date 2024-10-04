@@ -97,7 +97,7 @@ function Sidebar({ onCategoryClick, activeCategory }) {
                   }`}
                 >
                   <img
-                    src={`http://localhost:5000/uploads/category/${category.image}`}
+                    src={`https://silk-route-backend.onrender.com/uploads/category/${category.image}`}
                     alt={category.name}
                     className="w-10 h-10 mr-3 rounded-full object-cover"
                   />
@@ -137,7 +137,7 @@ function Sidebar({ onCategoryClick, activeCategory }) {
                 }`}
               >
                 <img
-                  src={`http://localhost:5000/uploads/category/${category.image}`}
+                  src={`https://silk-route-backend.onrender.com/uploads/category/${category.image}`}
                   alt={category.name}
                   className="w-10 h-10 mr-3 rounded-full object-cover"
                 />
