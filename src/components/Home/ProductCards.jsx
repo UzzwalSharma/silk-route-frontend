@@ -73,7 +73,7 @@ function ProductCards({ id, image, price, title, rating, ratingCounts, stock }) 
         {/* Image Container */}
         <div className="w-full h-48 mb-4">
           <img 
-            src={`https://silk-route-backend.onrender.com/products/${image}`}  
+            src={`https://silk-route-backend.onrender.com/products/${image}`} 
             alt={title} 
             className="h-full w-full object-contain rounded-t-lg" 
           />
