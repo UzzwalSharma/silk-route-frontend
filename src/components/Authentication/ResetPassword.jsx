@@ -32,11 +32,7 @@ const ResetPassword = () => {
     if (!errorMessage) { // If there are no errors, proceed to reset the password
       setIsSubmitting(true); // Set loading state
       try {
-       const response = await axios.post(`https://silk-route-backend.onrender.com/api/reset/reset-password/${token}`, { newPassword });
-
-
-
-
+        const response = await axios.post(`https://silk-route-backend.onrender.com/api/reset/reset-password/${token}`, { newPassword });
         setMessage('Password reset successful.');
         
         // Redirect to login page after 2 seconds
@@ -44,7 +40,7 @@ const ResetPassword = () => {
           navigate("/login");
         }, 2000);
       } catch (error) {
-        setMessage('Error resetting password.');
+        setMessage('Error resetting password. Please ensure the link is valid and not expired.');
       } finally {
         setIsSubmitting(false); // Stop loading state
       }
